@@ -17,6 +17,11 @@ class TestPersonnage(TestCase):
         personnage = Personnage()
         self.assertFalse(personnage.get_est_mort())
 
+    def test_reduire_point_de_vie(self):
+        personnage = Personnage()
+        personnage.reduire_point_de_vie(50)
+        self.assertEqual(50, personnage.get_point_de_vie())
+
     def test_attaque(self):
         personnage1 = Personnage()
         personnage2 = Personnage()
