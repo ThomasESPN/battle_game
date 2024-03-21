@@ -7,3 +7,7 @@ class TestPersonnage(TestCase):
         personnage = Personnage()
         self.assertEqual(100, personnage.ptv)
     
+    def test_tuer(self):
+        personnage = Personnage()
+        
+        self.assertTrue(personnage.est_mort)
