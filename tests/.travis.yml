@@ -1,6 +1,0 @@
-langage: python
-python:
-  - "3.12.2"
-
-script:
-  - py -m unittest
